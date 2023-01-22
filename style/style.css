@@ -46,7 +46,19 @@
     color:white;
 }
 
+.hidden{
+    display: none;
+}
 
+.mobile{
+    display: none;
+}
 
-
-
+@media(max-width: 485px) {
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}
