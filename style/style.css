@@ -54,6 +54,10 @@
     display: none;
 }
 
+.desktop{
+    display: block;
+}
+
 @media(max-width: 485px) {
     .mobile{
         display: block;
