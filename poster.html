@@ -15,6 +15,54 @@
 <body>
 
 
+    <div class="modal fade" id="deletePoster" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><span class="fw-bold text-danger">Удаление</span>
+                        Афиши</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    Вы действительно хотите удалить <span class="fw-bold text-danger">Явление искусства: урок
+                        театроведения</span>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger fw-bold">Да, хочу</button>
+                    <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Нет, в другой
+                        раз</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editPoster" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><span class="fw-bold text-info">Редактирования</span>
+                        Афиши</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" class="form-control mb-2" placeholder="Название мероприятия">
+                        <textarea class="form-control mb-2" name="" id="" cols="30" rows="10"
+                            placeholder="Описание мероприятия"></textarea>
+                        <input class="form-control mb-2" type="text" placeholder="Доп. информация">
+                        <input class="form-control mb-2" type="text" placeholder="Адрес">
+                        <input class="form-control mb-2" type="date" placeholder="Дата">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-outline-success">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand text-white" href="index.html">MAIB Admin</a>
@@ -73,160 +121,19 @@
                                             <time class="fs-4 fw-semibold">05.01.2023</time>
                                             <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
                                         </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
+                                        <div class="poster__item-settings" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-title="Настройки">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="" data-bs-toggle="modal"
+                                                            data-bs-target="#editPoster">Редактировать</a></li>
+                                                    <li><a class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                            data-bs-target="#deletePoster" href="">Удалить</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -234,12 +141,12 @@
                         </div>
                     </div>
                     <button type="button" class="mb-5 btn btn-outline-primary text-start w-75">Новая афиша</button>
-            </div>
+                </div>
             </div>
 
             <div class="row align-items-start">
                 <div class="col mb-5 desktop">
-                    <h3 class="mb-2">Управление афишами</h3>
+                    <h3 class="mb-3">Управление афишами</h3>
                     <div class="poster-list mb-5">
                         <div class="card w-75 mb-3">
                             <div class="card-body">
@@ -253,160 +160,20 @@
                                             <time class="fs-4 fw-semibold">05.01.2023</time>
                                             <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
                                         </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <div class="poster__item-title d-flex align-items-center justify-content-between pb-5">
-                                    <h5>Явление искусства: урок театроведения</h6>
-                                        <img src="img/poster__item-icon.svg" alt="">
-                                </div>
-                                <div class="poster__item-content">
-                                    <div class="poster__item-info d-flex align-items-center justify-content-between">
-                                        <div class="poster__item-data ">
-                                            <time class="fs-4 fw-semibold">05.01.2023</time>
-                                            <p class="text-primary">Гоголевская ул., 55, Мичуринск</p>
-                                        </div>
-                                        <div class="poster__item-settings" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Настройки">
-                                            <img src="img/settings.svg" alt="">
+                                        <div class="poster__item-settings" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-title="Настройки">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="" data-bs-toggle="modal"
+                                                            data-bs-target="#editPoster">Редактировать</a></li>
+                                                    <li><a class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                            data-bs-target="#deletePoster" href="">Удалить</a></li>
+
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -419,6 +186,7 @@
 
 
                 <div class="col">
+                    <h3 class="mb-3">Добавление афишами</h3>
                     <form class="d-flex flex-column" action="">
                         <input class="form-control mb-3" placeholder="Название мероприятия" type="text">
                         <textarea class="form-control mb-3" placeholder="Описание мероприятия" name="" id="" cols="30"
@@ -436,8 +204,10 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
     <!-- <script src="js/app.js"></script> -->
 </body>
 
